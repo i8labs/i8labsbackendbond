@@ -11,7 +11,7 @@ Resources:
       Description: 'Lambda function for CD HelloWorld'
       MemorySize: 128
       Timeout: 30
-      Role: 'arn:aws:iam::093833860903:role/BondAPI_Lambda'
+      Role: 'arn:aws:iam::679381524914:role/BondAPI_Lambda'
       Events:
         getAZsAPI:
           Type: Api

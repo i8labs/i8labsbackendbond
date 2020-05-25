@@ -21,6 +21,7 @@ Resources:
           Properties:
             Path: /getHelloWorldTest
             Method: get
+            StageName: PROD
       Environment:
         Variables:
           REGION: ap-south-1

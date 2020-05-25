@@ -8,7 +8,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.7
       CodeUri: ./LambdaCode
-      AutoPublishAlias: PROD
+      AutoPublishAlias: UAT
       Layers:
         - arn:aws:lambda:ap-south-1:679381524914:layer:i8labs-bond-pymySQL:1
       Description: 'Lambda function for CD HelloWorld'
@@ -21,7 +21,6 @@ Resources:
           Properties:
             Path: /getHelloWorldTest
             Method: get
-            StageName: PROD
       Environment:
         Variables:
           REGION: ap-south-1

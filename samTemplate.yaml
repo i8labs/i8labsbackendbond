@@ -21,6 +21,11 @@ Resources:
           Properties:
             Path: /getHelloWorldTest
             Method: get
+            RestApiId: !Ref MyApi
       Environment:
         Variables:
           REGION: ap-south-1
+  MyApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: UAT

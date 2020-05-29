@@ -27,4 +27,4 @@ Resources:
   MyApi:
     Type: AWS::Serverless::Api
     Properties:
-      StageName: V1
+      StageName: DEV

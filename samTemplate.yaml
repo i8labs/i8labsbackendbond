@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
-Description: Lambda Hello World 20200529-3
+Description: Lambda Hello World 20200529-4
 Resources:
   i8labsbackendbond:
     Type: 'AWS::Serverless::Function'
@@ -18,7 +18,7 @@ Resources:
         getAZsAPI:
           Type: Api
           Properties:
-            Path: /getHelloWorldTest
+            Path: /getHelloTest
             Method: get
             RestApiId: !Ref MyApi
       Environment:
